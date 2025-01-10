@@ -18,7 +18,9 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3  # 使用官方 Node.js 的 Action
       with:
-        node-version: '16'  # 指定 Node.js 版本（根據你的專案需要選擇，例如 14、16 或 18）
+        node-version: '18'  # 指定 Node.js 版本（根據你的專案需要選擇，例如 14、16 或 18）
+        # 基於 穩定性 和 兼容性，選擇 Node.js 18。
+        # 需要 最新功能 或是你使用的依賴項已經優化為最新版本，選擇 Node.js 20。
 
     # 步驟 3: 安裝專案的依賴項
     - name: Install dependencies
